@@ -13,10 +13,6 @@
       --dark-bg: #323232;
       --dark-fg: #cfcfcf;
       --dark-fg-lighter: #999;
-      --font-primary: 'San Franciso', 'Helvetica Nueue', 'Helvetica', arial,
-        sans-serif;
-      --font-size-base: 16px;
-      --font-size-sm: 13px;
       --color-link: #e0e0e0;
       --color-link-visited: #757575;
     }
@@ -27,7 +23,6 @@
           &:link,
           &:visited {
             color: white;
-            font-weight: bold;
           }
         }
       }
@@ -38,8 +33,6 @@
     html[op='reply'],
     html[op] {
       * {
-        font-family: var(--font-primary);
-        font-size: var(--font-size-base);
         color: var(--dark-fg);
       }
 
@@ -52,9 +45,6 @@
       input[type='submit'] {
         background-image: linear-gradient(-180deg, #656565 0%, #656565 100%);
         border: 1px solid #333;
-        border-radius: 4px;
-        padding: 0.6rem;
-        font-size: 0.9rem;
         &:active {
           background: orangered;
           color: white;
@@ -84,9 +74,8 @@
       }
 
       body {
-        background: #353535;
+        background: #222222;
         background-repeat: no-repeat;
-        background-image: linear-gradient(-180deg, #424242 0, #353535 60px);
       }
 
       table,
@@ -100,28 +89,11 @@
       .sitestr,
       .subtext,
       .subtext * {
-        font-size: 0.8rem;
         color: var(--dark-fg-lighter);
-      }
-
-      .itemlist tr.athing td {
-        padding-top: 0.25rem;
-      }
-
-      .athing > .title:first-child {
-        vertical-align: top;
-        position: relative;
-        top: 6px;
       }
 
       .rank {
-        text-align: right;
-        font-size: 0.6rem;
         color: var(--dark-fg-lighter);
-      }
-
-      .votelinks {
-        padding: 0 0.25rem;
       }
     }
   }
